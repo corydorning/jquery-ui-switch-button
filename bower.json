@@ -6,7 +6,7 @@
   "authors": [
     "Cory Dorning <cory@dorning.me>"
   ],
-  "description": "Switch Button is a jQuery UI widget built atop the buttonset widget, that mimics the iPhone style checkbox to toggle an on and off state.",
+  "description": "Switch Button is a jQuery UI widget that mimics the iPhone style toggle for on and off states.",
   "keywords": [
     "jquery",
     "jquery ui",
