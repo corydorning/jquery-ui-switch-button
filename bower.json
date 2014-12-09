@@ -1,0 +1,24 @@
+{
+  "name": "jquery-ui-switch-button",
+  "main": ["jquery.ui.switch-button.js"],
+  "version": "1.0.0",
+  "homepage": "https://github.com/corydorning/jquery-ui-switch-button",
+  "authors": [
+    "Cory Dorning <cory@dorning.me>"
+  ],
+  "description": "Switch Button is a jQuery UI widget built atop the buttonset widget, that mimics the iPhone style checkbox to toggle an on and off state.",
+  "keywords": [
+    "jquery",
+    "jquery ui",
+    "switch button",
+    "iphone checkbox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

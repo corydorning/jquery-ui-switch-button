@@ -1,0 +1,17 @@
+/* 
+ *
+ * Authored by: Cory Dorning
+ *
+ * Last modified by: Cory Dorning
+ * Last modified on: 8/7/2014
+ *
+ * Description: 
+ *
+ */
+
+/* plugin styles */
+
+/* allows you to toggle the background colors when the button is switched on or off */
+.ui-switch-button-on .ui-state-active {
+  background: #fff;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Switch Button Widget</title>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css" rel="stylesheet">
+  <link href="jquery-ui-switch-button.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Switch Button Plugin</h1>
+
+  <p>Switch Button is a jQuery UI widget that mimics the iPhone style toggle for on and off states.</p>
+
+  <h2>Plugin Options</h2>
+  <p>You can set any of the following options to customize it to fit your needs:</p>
+
+<pre>
+<code>
+// default options
+$('selector').switchbutton({
+  state: 'off'
+});
+</code>
+</pre>
+
+  <p>NOTE: Options can be set using the <code>data-options</code> attribute as well, and passing it a <code>switchbutton</code> object. For example:</p>
+
+  <pre>
+<code>
+&lt;div data-role="switchbutton" data-options='{ "switchbutton": { "state": "on" }}'&gt;
+  &lt;input type="radio" id="switch-off" name="switch-radio" checked="checked"&gt;
+  &lt;label for="switch-off"&gt;Off&lt;/label&gt;
+
+  &lt;input type="radio" id="switch-on" name="switch-radio"&gt;
+  &lt;label for="switch-on"&gt;On&lt;/label&gt;
+&lt;/div&gt;
+</code>
+  </pre>
+
+
+  <h2>CSS Hooks</h2>
+  <ul>
+    <li>On Checkbox: <code>.ui-switch-button-on</code></li>
+    <li>Off Checkbox: <code>.ui-switch-button-off</code></li>
+  </ul>
+
+
+  <h2>Plugin Examples</h2>
+  <p>Click the switch button below to toggle its state.</p>
+
+  <div data-role="switchbutton" data-options='{ "switchbutton": { "state": "on" }}'>
+    <input type="radio" id="switch-off" name="switch-radio">
+    <label for="switch-off">Off</label>
+
+    <input type="radio" id="switch-on" name="switch-radio" checked="checked">
+    <label for="switch-on">On</label>
+  </div>
+
+
+
+<!-- local test-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="jquery.ui.switch-button.js"></script>
+
+<script>
+  // jQuery noConflict
+  (function($) {
+    "use strict";
+
+    // jQuery DOM Ready
+    $(function() {
+      // initialize please wait buttons
+      $('[data-role~="switchbutton"]').switchbutton();
+    }); // DOM Ready
+
+  })(jQuery);
+</script>
+
+</body>
+</html>
