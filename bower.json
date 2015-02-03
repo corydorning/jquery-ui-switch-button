@@ -1,6 +1,6 @@
 {
   "name": "jquery-ui-switch-button",
-  "main": ["jquery.ui.switch-button.js"],
+  "main": ["jquery-ui-switch-button.js", "jquery-ui-switch-button.css"],
   "version": "1.0.0",
   "homepage": "https://github.com/corydorning/jquery-ui-switch-button",
   "authors": [

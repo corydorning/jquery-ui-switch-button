@@ -45,7 +45,7 @@
       ;
 
       // update options with initial radiobutton state and html5 data
-      $.extend(this.options, { state: $on.radio.prop('checked') || 'off' }, $buttonset.data('options') && $buttonset.data('options').switchbutton || {});
+      $.extend(o, { state: $on.radio.prop('checked') || 'off' }, $buttonset.data('options') && $buttonset.data('options').switchbutton || {});
 
         // hide button label text
       $labels.children('.ui-button-text').css('visibility', 'hidden');
@@ -60,10 +60,7 @@
 
     // binds events
     _setupEvents: function() {
-      var self = this
-        ,
-          o = self.options
-      ;
+      var self = this;
 
       // toggle on/off when
       self._toggle();
@@ -91,7 +88,6 @@
 
     toggleOn: function() {
       var self = this
-        , o = self.options
         , $buttonset = self.$buttonset
         , $on = self.$on
         , $off = self.$off
@@ -131,7 +127,6 @@
 
     toggleOff: function() {
       var self = this
-        , o = self.options
         , $buttonset = self.$buttonset
         , $on = self.$on
         , $off = self.$off
