@@ -1,4 +1,4 @@
-/*! jquery.ui.switch-button.js
+/*! jquery-ui-switch-button.js
  *
  * URL: http://corydorning.com/projects/switch-button
  *
